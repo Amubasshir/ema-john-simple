@@ -7,11 +7,13 @@ import OrderReview from './components/OrderReview/OrderReview';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import Register from './components/Register/Register';
 import Shop from './components/Shop/Shop';
+import AuthProvider from './contex/AuthProvider';
 import Login from './Login/Login';
 
 function App() {
   return (
     <div>
+      <AuthProvider>
       <Router>
         <Header></Header>
         <Switch>
@@ -41,6 +43,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+   </AuthProvider>
 
     </div>
   );
