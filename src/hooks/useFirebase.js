@@ -23,7 +23,7 @@ const useFirebase = () =>
         signOut(auth)
             .then(() =>
             {
-            
+            setUser({})
         })
     }
 
